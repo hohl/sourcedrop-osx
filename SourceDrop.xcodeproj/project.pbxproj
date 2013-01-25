@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F13745115D6B0C10091003F /* SourceDrop.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 5F13745015D6B0C10091003F /* SourceDrop.iconset */; };
+		5F18DBEF1544179A00FC25FE /* SDPWelcomeMessage.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5F18DBEE1544179A00FC25FE /* SDPWelcomeMessage.txt */; };
+		5F18DC0A15446A2300FC25FE /* SDPRecentUploadsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F18DC0915446A2300FC25FE /* SDPRecentUploadsController.m */; };
+		5F18DC0D1544751800FC25FE /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F18DC0C1544751800FC25FE /* NSString+Utils.m */; };
+		5F209E83153D950800E9D40D /* PTHotKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F209E7C153D950800E9D40D /* PTHotKey.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F209E84153D950800E9D40D /* PTHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F209E7E153D950800E9D40D /* PTHotKeyCenter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F209E85153D950800E9D40D /* PTKeyCodeTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F209E80153D950800E9D40D /* PTKeyCodeTranslator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F209E86153D950800E9D40D /* PTKeyCombo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F209E82153D950800E9D40D /* PTKeyCombo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F21395C1539C56C00D40300 /* SDPStatusBarAlternateIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F21395B1539C56C00D40300 /* SDPStatusBarAlternateIcon.png */; };
+		5F213983153B066B00D40300 /* SDPNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F213982153B066B00D40300 /* SDPNotificationController.m */; };
+		5F2C16B11535FEE8006F3C2A /* SDPGistInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2C16B01535FEE8006F3C2A /* SDPGistInterface.m */; };
+		5F2C16B41536B39F006F3C2A /* SDPStatusItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2C16B31536B39F006F3C2A /* SDPStatusItemController.m */; };
+		5F2C16D41536FDC2006F3C2A /* SDPGeneralPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2C16D31536FDC2006F3C2A /* SDPGeneralPreferencesViewController.m */; };
+		5F2C16D61536FDEB006F3C2A /* SDPGeneralPreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F2C16D51536FDEB006F3C2A /* SDPGeneralPreferencesView.xib */; };
+		5F2C16D81536FE68006F3C2A /* SDPAdvancedPreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F2C16D71536FE68006F3C2A /* SDPAdvancedPreferencesView.xib */; };
+		5F2C16DB1536FE77006F3C2A /* SDPAdvancedPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2C16DA1536FE77006F3C2A /* SDPAdvancedPreferencesViewController.m */; };
+		5F2C16EE153725AE006F3C2A /* SDPTinyPasteInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2C16ED153725AE006F3C2A /* SDPTinyPasteInterface.m */; };
+		5F2C16F615372916006F3C2A /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2C16F515372916006F3C2A /* NSString+MD5.m */; };
+		5F2E0BFB15BBFFAE00DB0ACA /* SDPUploadFailureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2E0BFA15BBFFAE00DB0ACA /* SDPUploadFailureController.m */; };
+		5F2E0BFD15BC010E00DB0ACA /* SDPDetailedLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F2E0BFC15BC010D00DB0ACA /* SDPDetailedLogView.xib */; };
+		5F2E0C1515BCA0F600DB0ACA /* EMKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2E0C1415BCA0F600DB0ACA /* EMKeychainItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F2E0C1815BCA31600DB0ACA /* SDPAuthenticationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2E0C1715BCA31600DB0ACA /* SDPAuthenticationController.m */; };
+		5F3FCEE6153FF9A60030FC76 /* SDPSharingServices.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F3FCEE5153FF9A60030FC76 /* SDPSharingServices.plist */; };
+		5F5DBA4E155AAFCE00833BEE /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F5DBA4D155AAFCE00833BEE /* ServiceManagement.framework */; };
+		5F660DBA159DD3C0002A8F9C /* NSData+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F660DB9159DD3C0002A8F9C /* NSData+AES256.m */; };
+		5F781CF31549705E0003733A /* NSData+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F781CF21549705E0003733A /* NSData+Utils.m */; };
+		5F7B4645153B2FB20066424F /* UploadNotification.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5F7B4644153B2FB20066424F /* UploadNotification.wav */; };
+		5F88028D1592F24500C5ADA2 /* SDPNotificationPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F88028C1592F24500C5ADA2 /* SDPNotificationPopup.m */; };
+		5F88029115931C1D00C5ADA2 /* SDPStatusBarNotification.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F88029015931C1D00C5ADA2 /* SDPStatusBarNotification.xib */; };
+		5F8802A51593859100C5ADA2 /* SDPClickableTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8802A41593859100C5ADA2 /* SDPClickableTextField.m */; };
+		5F8802A915938C2B00C5ADA2 /* SDPStatusBarNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8802A815938C2B00C5ADA2 /* SDPStatusBarNotificationViewController.m */; };
+		5F8802BD15944D4500C5ADA2 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8802BC15944D4500C5ADA2 /* NSString+Size.m */; };
+		5F8AEA0D1542C59D006B1AA3 /* SDPConfigurableInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8AEA0C1542C59D006B1AA3 /* SDPConfigurableInterface.m */; };
+		5F9BF2B61548275800770B83 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F9BF2B51548275800770B83 /* Security.framework */; };
+		5F9BF2BC1548278000770B83 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F9BF2BB1548278000770B83 /* IOKit.framework */; };
+		5F9D98D915BAE34500B0FF2B /* NSString+BASE64.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D98D815BAE34500B0FF2B /* NSString+BASE64.m */; };
+		5FAB239715408583000A46F1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAB239615408583000A46F1 /* StoreKit.framework */; };
+		5FAF1E7215542D7A00A7F6A9 /* SDPSourceDropInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FAF1E7115542D7A00A7F6A9 /* SDPSourceDropInterface.m */; };
+		5FAF1EC91556A5C700A7F6A9 /* SDPServicesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FAF1EC81556A5C700A7F6A9 /* SDPServicesProvider.m */; };
+		5FB1403F1535CCAB00A4565C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB1403E1535CCAB00A4565C /* Cocoa.framework */; };
+		5FB140491535CCAB00A4565C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5FB140471535CCAB00A4565C /* InfoPlist.strings */; };
+		5FB1404B1535CCAB00A4565C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1404A1535CCAB00A4565C /* main.m */; };
+		5FB1404F1535CCAB00A4565C /* Thanks.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB1404D1535CCAB00A4565C /* Thanks.rtf */; };
+		5FB140521535CCAB00A4565C /* SDPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB140511535CCAB00A4565C /* SDPAppDelegate.m */; };
+		5FB140551535CCAB00A4565C /* SDPStatusMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB140531535CCAB00A4565C /* SDPStatusMenu.xib */; };
+		5FB140611535D5FA00A4565C /* SDPStatusBarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB140601535D5FA00A4565C /* SDPStatusBarIcon.png */; };
+		5FC1F4CB153C3CD3009D5E15 /* SRRecorderControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC1F4C2153C3CD3009D5E15 /* SRRecorderControl.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5FC1F4CC153C3CD3009D5E15 /* SRRecorderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC1F4C4153C3CD3009D5E15 /* SRRecorderCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5FC1F4CD153C3CD3009D5E15 /* SRKeyCodeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC1F4C6153C3CD3009D5E15 /* SRKeyCodeTransformer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5FC1F4CE153C3CD3009D5E15 /* SRValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC1F4C8153C3CD3009D5E15 /* SRValidator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5FC1F4CF153C3CD3009D5E15 /* SRCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC1F4CA153C3CD3009D5E15 /* SRCommon.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5FC1F4D1153C3E57009D5E15 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC1F4D0153C3E57009D5E15 /* Carbon.framework */; };
+		5FD57880153C75B800818808 /* SDPUserDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FD5787F153C75B800818808 /* SDPUserDefaults.plist */; };
+		5FE576431535DDD900D65C4F /* SDPPasteBinInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE576421535DDD900D65C4F /* SDPPasteBinInterface.m */; };
+		5FE5766E1535DFEC00D65C4F /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE5766D1535DFEC00D65C4F /* CoreServices.framework */; };
+		5FE576701535E00600D65C4F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE5766F1535E00600D65C4F /* SystemConfiguration.framework */; };
+		5FE576741535E04A00D65C4F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE576731535E04A00D65C4F /* libz.dylib */; };
+		76D31988ACEB45EF9AAE25B5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CBC006631241A283FE8000 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28F28676A36342CFAABED150 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		53935B4D6F58464D8C0F2568 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		5F13745015D6B0C10091003F /* SourceDrop.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = SourceDrop.iconset; sourceTree = SOURCE_ROOT; };
+		5F18DBEE1544179A00FC25FE /* SDPWelcomeMessage.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SDPWelcomeMessage.txt; sourceTree = "<group>"; };
+		5F18DC0815446A2300FC25FE /* SDPRecentUploadsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPRecentUploadsController.h; sourceTree = "<group>"; };
+		5F18DC0915446A2300FC25FE /* SDPRecentUploadsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPRecentUploadsController.m; sourceTree = "<group>"; };
+		5F18DC0B1544751800FC25FE /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		5F18DC0C1544751800FC25FE /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		5F209E7B153D950800E9D40D /* PTHotKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHotKey.h; sourceTree = "<group>"; };
+		5F209E7C153D950800E9D40D /* PTHotKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHotKey.m; sourceTree = "<group>"; };
+		5F209E7D153D950800E9D40D /* PTHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHotKeyCenter.h; sourceTree = "<group>"; };
+		5F209E7E153D950800E9D40D /* PTHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHotKeyCenter.m; sourceTree = "<group>"; };
+		5F209E7F153D950800E9D40D /* PTKeyCodeTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKeyCodeTranslator.h; sourceTree = "<group>"; };
+		5F209E80153D950800E9D40D /* PTKeyCodeTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKeyCodeTranslator.m; sourceTree = "<group>"; };
+		5F209E81153D950800E9D40D /* PTKeyCombo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKeyCombo.h; sourceTree = "<group>"; };
+		5F209E82153D950800E9D40D /* PTKeyCombo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKeyCombo.m; sourceTree = "<group>"; };
+		5F21395B1539C56C00D40300 /* SDPStatusBarAlternateIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SDPStatusBarAlternateIcon.png; sourceTree = "<group>"; };
+		5F213981153B066B00D40300 /* SDPNotificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPNotificationController.h; sourceTree = "<group>"; };
+		5F213982153B066B00D40300 /* SDPNotificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPNotificationController.m; sourceTree = "<group>"; };
+		5F2C16AF1535FEE8006F3C2A /* SDPGistInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPGistInterface.h; sourceTree = "<group>"; };
+		5F2C16B01535FEE8006F3C2A /* SDPGistInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPGistInterface.m; sourceTree = "<group>"; };
+		5F2C16B21536B39F006F3C2A /* SDPStatusItemController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPStatusItemController.h; sourceTree = "<group>"; };
+		5F2C16B31536B39F006F3C2A /* SDPStatusItemController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPStatusItemController.m; sourceTree = "<group>"; };
+		5F2C16D21536FDC2006F3C2A /* SDPGeneralPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPGeneralPreferencesViewController.h; sourceTree = "<group>"; };
+		5F2C16D31536FDC2006F3C2A /* SDPGeneralPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPGeneralPreferencesViewController.m; sourceTree = "<group>"; };
+		5F2C16D51536FDEB006F3C2A /* SDPGeneralPreferencesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDPGeneralPreferencesView.xib; sourceTree = "<group>"; };
+		5F2C16D71536FE68006F3C2A /* SDPAdvancedPreferencesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDPAdvancedPreferencesView.xib; sourceTree = "<group>"; };
+		5F2C16D91536FE77006F3C2A /* SDPAdvancedPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPAdvancedPreferencesViewController.h; sourceTree = "<group>"; };
+		5F2C16DA1536FE77006F3C2A /* SDPAdvancedPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPAdvancedPreferencesViewController.m; sourceTree = "<group>"; };
+		5F2C16EC153725AE006F3C2A /* SDPTinyPasteInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPTinyPasteInterface.h; sourceTree = "<group>"; };
+		5F2C16ED153725AE006F3C2A /* SDPTinyPasteInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPTinyPasteInterface.m; sourceTree = "<group>"; };
+		5F2C16F415372916006F3C2A /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		5F2C16F515372916006F3C2A /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		5F2E0BF915BBFFAE00DB0ACA /* SDPUploadFailureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPUploadFailureController.h; sourceTree = "<group>"; };
+		5F2E0BFA15BBFFAE00DB0ACA /* SDPUploadFailureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPUploadFailureController.m; sourceTree = "<group>"; };
+		5F2E0BFC15BC010D00DB0ACA /* SDPDetailedLogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDPDetailedLogView.xib; sourceTree = "<group>"; };
+		5F2E0C1315BCA0F600DB0ACA /* EMKeychainItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMKeychainItem.h; sourceTree = "<group>"; };
+		5F2E0C1415BCA0F600DB0ACA /* EMKeychainItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMKeychainItem.m; sourceTree = "<group>"; };
+		5F2E0C1615BCA31600DB0ACA /* SDPAuthenticationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPAuthenticationController.h; sourceTree = "<group>"; };
+		5F2E0C1715BCA31600DB0ACA /* SDPAuthenticationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPAuthenticationController.m; sourceTree = "<group>"; };
+		5F3FCEE5153FF9A60030FC76 /* SDPSharingServices.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SDPSharingServices.plist; sourceTree = "<group>"; };
+		5F5DBA4D155AAFCE00833BEE /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		5F660DB8159DD3C0002A8F9C /* NSData+AES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES256.h"; sourceTree = "<group>"; };
+		5F660DB9159DD3C0002A8F9C /* NSData+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES256.m"; sourceTree = "<group>"; };
+		5F781CF11549705E0003733A /* NSData+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Utils.h"; sourceTree = "<group>"; };
+		5F781CF21549705E0003733A /* NSData+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Utils.m"; sourceTree = "<group>"; };
+		5F7B4644153B2FB20066424F /* UploadNotification.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = UploadNotification.wav; sourceTree = "<group>"; };
+		5F88028B1592F24500C5ADA2 /* SDPNotificationPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPNotificationPopup.h; sourceTree = "<group>"; };
+		5F88028C1592F24500C5ADA2 /* SDPNotificationPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPNotificationPopup.m; sourceTree = "<group>"; };
+		5F88029015931C1D00C5ADA2 /* SDPStatusBarNotification.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDPStatusBarNotification.xib; sourceTree = "<group>"; };
+		5F8802A31593859100C5ADA2 /* SDPClickableTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPClickableTextField.h; sourceTree = "<group>"; };
+		5F8802A41593859100C5ADA2 /* SDPClickableTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPClickableTextField.m; sourceTree = "<group>"; };
+		5F8802A715938C2B00C5ADA2 /* SDPStatusBarNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPStatusBarNotificationViewController.h; sourceTree = "<group>"; };
+		5F8802A815938C2B00C5ADA2 /* SDPStatusBarNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPStatusBarNotificationViewController.m; sourceTree = "<group>"; };
+		5F8802BB15944D4500C5ADA2 /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
+		5F8802BC15944D4500C5ADA2 /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
+		5F8AEA0B1542C59D006B1AA3 /* SDPConfigurableInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPConfigurableInterface.h; sourceTree = "<group>"; };
+		5F8AEA0C1542C59D006B1AA3 /* SDPConfigurableInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPConfigurableInterface.m; sourceTree = "<group>"; };
+		5F9BF2B51548275800770B83 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5F9BF2BB1548278000770B83 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		5F9D98D715BAE34500B0FF2B /* NSString+BASE64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BASE64.h"; sourceTree = "<group>"; };
+		5F9D98D815BAE34500B0FF2B /* NSString+BASE64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BASE64.m"; sourceTree = "<group>"; };
+		5FAB239615408583000A46F1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		5FAF1E7015542D7A00A7F6A9 /* SDPSourceDropInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPSourceDropInterface.h; sourceTree = "<group>"; };
+		5FAF1E7115542D7A00A7F6A9 /* SDPSourceDropInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPSourceDropInterface.m; sourceTree = "<group>"; };
+		5FAF1EC71556A5C700A7F6A9 /* SDPServicesProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPServicesProvider.h; sourceTree = "<group>"; };
+		5FAF1EC81556A5C700A7F6A9 /* SDPServicesProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPServicesProvider.m; sourceTree = "<group>"; };
+		5FB1403A1535CCAB00A4565C /* SourceDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SourceDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB1403E1535CCAB00A4565C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5FB140411535CCAB00A4565C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5FB140421535CCAB00A4565C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5FB140431535CCAB00A4565C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5FB140461535CCAB00A4565C /* SourceDrop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SourceDrop-Info.plist"; sourceTree = "<group>"; };
+		5FB140481535CCAB00A4565C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5FB1404A1535CCAB00A4565C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5FB1404C1535CCAB00A4565C /* SourceDrop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SourceDrop-Prefix.pch"; sourceTree = "<group>"; };
+		5FB1404E1535CCAB00A4565C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Thanks.rtf; sourceTree = "<group>"; };
+		5FB140501535CCAB00A4565C /* SDPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDPAppDelegate.h; sourceTree = "<group>"; };
+		5FB140511535CCAB00A4565C /* SDPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDPAppDelegate.m; sourceTree = "<group>"; };
+		5FB140541535CCAB00A4565C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SDPStatusMenu.xib; sourceTree = "<group>"; };
+		5FB140601535D5FA00A4565C /* SDPStatusBarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SDPStatusBarIcon.png; sourceTree = "<group>"; };
+		5FC1F4C0153C3CD3009D5E15 /* ShortcutRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortcutRecorder.h; sourceTree = "<group>"; };
+		5FC1F4C1153C3CD3009D5E15 /* SRRecorderControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRecorderControl.h; sourceTree = "<group>"; };
+		5FC1F4C2153C3CD3009D5E15 /* SRRecorderControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRecorderControl.m; sourceTree = "<group>"; };
+		5FC1F4C3153C3CD3009D5E15 /* SRRecorderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRecorderCell.h; sourceTree = "<group>"; };
+		5FC1F4C4153C3CD3009D5E15 /* SRRecorderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRecorderCell.m; sourceTree = "<group>"; };
+		5FC1F4C5153C3CD3009D5E15 /* SRKeyCodeTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKeyCodeTransformer.h; sourceTree = "<group>"; };
+		5FC1F4C6153C3CD3009D5E15 /* SRKeyCodeTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKeyCodeTransformer.m; sourceTree = "<group>"; };
+		5FC1F4C7153C3CD3009D5E15 /* SRValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRValidator.h; sourceTree = "<group>"; };
+		5FC1F4C8153C3CD3009D5E15 /* SRValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRValidator.m; sourceTree = "<group>"; };
+		5FC1F4C9153C3CD3009D5E15 /* SRCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCommon.h; sourceTree = "<group>"; };
+		5FC1F4CA153C3CD3009D5E15 /* SRCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRCommon.m; sourceTree = "<group>"; };
+		5FC1F4D0153C3E57009D5E15 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		5FD5787F153C75B800818808 /* SDPUserDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SDPUserDefaults.plist; sourceTree = "<group>"; };
+		5FE576401535DCAB00D65C4F /* SDPSharingInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDPSharingInterface.h; sourceTree = "<group>"; };
+		5FE576411535DDD900D65C4F /* SDPPasteBinInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPPasteBinInterface.h; sourceTree = "<group>"; };
+		5FE576421535DDD900D65C4F /* SDPPasteBinInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPPasteBinInterface.m; sourceTree = "<group>"; };
+		5FE5766D1535DFEC00D65C4F /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		5FE5766F1535E00600D65C4F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5FE576731535E04A00D65C4F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		5FFA20391546AF4E0092257A /* SourceDrop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SourceDrop.entitlements; sourceTree = "<group>"; };
+		61CBC006631241A283FE8000 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2381D8F503F412282AA8913 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FB140371535CCAB00A4565C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FE576701535E00600D65C4F /* SystemConfiguration.framework in Frameworks */,
+				5F5DBA4E155AAFCE00833BEE /* ServiceManagement.framework in Frameworks */,
+				5FE5766E1535DFEC00D65C4F /* CoreServices.framework in Frameworks */,
+				5FB1403F1535CCAB00A4565C /* Cocoa.framework in Frameworks */,
+				5FC1F4D1153C3E57009D5E15 /* Carbon.framework in Frameworks */,
+				5FAB239715408583000A46F1 /* StoreKit.framework in Frameworks */,
+				5F9BF2BC1548278000770B83 /* IOKit.framework in Frameworks */,
+				5F9BF2B61548275800770B83 /* Security.framework in Frameworks */,
+				5FE576741535E04A00D65C4F /* libz.dylib in Frameworks */,
+				76D31988ACEB45EF9AAE25B5 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F209E7A153D94E500E9D40D /* PTHotKey */ = {
+			isa = PBXGroup;
+			children = (
+				5F209E7B153D950800E9D40D /* PTHotKey.h */,
+				5F209E7C153D950800E9D40D /* PTHotKey.m */,
+				5F209E7D153D950800E9D40D /* PTHotKeyCenter.h */,
+				5F209E7E153D950800E9D40D /* PTHotKeyCenter.m */,
+				5F209E7F153D950800E9D40D /* PTKeyCodeTranslator.h */,
+				5F209E80153D950800E9D40D /* PTKeyCodeTranslator.m */,
+				5F209E81153D950800E9D40D /* PTKeyCombo.h */,
+				5F209E82153D950800E9D40D /* PTKeyCombo.m */,
+			);
+			name = PTHotKey;
+			sourceTree = "<group>";
+		};
+		5F2C16B51536DC81006F3C2A /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				5F2C16DC1537040E006F3C2A /* Preferences */,
+				5F8802A6159387D400C5ADA2 /* UI Extensions */,
+				5FB140531535CCAB00A4565C /* SDPStatusMenu.xib */,
+				5F2C16B21536B39F006F3C2A /* SDPStatusItemController.h */,
+				5F2C16B31536B39F006F3C2A /* SDPStatusItemController.m */,
+				5F18DC0815446A2300FC25FE /* SDPRecentUploadsController.h */,
+				5F18DC0915446A2300FC25FE /* SDPRecentUploadsController.m */,
+				5F2E0BFC15BC010D00DB0ACA /* SDPDetailedLogView.xib */,
+				5F2E0BF915BBFFAE00DB0ACA /* SDPUploadFailureController.h */,
+				5F2E0BFA15BBFFAE00DB0ACA /* SDPUploadFailureController.m */,
+				5F213981153B066B00D40300 /* SDPNotificationController.h */,
+				5F213982153B066B00D40300 /* SDPNotificationController.m */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		5F2C16DC1537040E006F3C2A /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				5F2C16D51536FDEB006F3C2A /* SDPGeneralPreferencesView.xib */,
+				5F2C16D21536FDC2006F3C2A /* SDPGeneralPreferencesViewController.h */,
+				5F2C16D31536FDC2006F3C2A /* SDPGeneralPreferencesViewController.m */,
+				5F2C16D71536FE68006F3C2A /* SDPAdvancedPreferencesView.xib */,
+				5F2C16D91536FE77006F3C2A /* SDPAdvancedPreferencesViewController.h */,
+				5F2C16DA1536FE77006F3C2A /* SDPAdvancedPreferencesViewController.m */,
+				5F2E0C1615BCA31600DB0ACA /* SDPAuthenticationController.h */,
+				5F2E0C1715BCA31600DB0ACA /* SDPAuthenticationController.m */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		5F2C16EF1537281A006F3C2A /* Other Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5F2E0C1215BCA0DD00DB0ACA /* ExtendMac.com */,
+				5FC1F4BF153C3CC1009D5E15 /* ShortcutRecorder */,
+				5F660DB8159DD3C0002A8F9C /* NSData+AES256.h */,
+				5F660DB9159DD3C0002A8F9C /* NSData+AES256.m */,
+				5F781CF11549705E0003733A /* NSData+Utils.h */,
+				5F781CF21549705E0003733A /* NSData+Utils.m */,
+				5F2C16F415372916006F3C2A /* NSString+MD5.h */,
+				5F2C16F515372916006F3C2A /* NSString+MD5.m */,
+				5F9D98D715BAE34500B0FF2B /* NSString+BASE64.h */,
+				5F9D98D815BAE34500B0FF2B /* NSString+BASE64.m */,
+				5F8802BB15944D4500C5ADA2 /* NSString+Size.h */,
+				5F8802BC15944D4500C5ADA2 /* NSString+Size.m */,
+				5F18DC0B1544751800FC25FE /* NSString+Utils.h */,
+				5F18DC0C1544751800FC25FE /* NSString+Utils.m */,
+			);
+			name = "Other Utilities";
+			sourceTree = "<group>";
+		};
+		5F2E0C1215BCA0DD00DB0ACA /* ExtendMac.com */ = {
+			isa = PBXGroup;
+			children = (
+				5F2E0C1315BCA0F600DB0ACA /* EMKeychainItem.h */,
+				5F2E0C1415BCA0F600DB0ACA /* EMKeychainItem.m */,
+			);
+			name = ExtendMac.com;
+			sourceTree = "<group>";
+		};
+		5F6C02FF16B0500900C1E830 /* System Services */ = {
+			isa = PBXGroup;
+			children = (
+				5FAF1EC71556A5C700A7F6A9 /* SDPServicesProvider.h */,
+				5FAF1EC81556A5C700A7F6A9 /* SDPServicesProvider.m */,
+			);
+			name = "System Services";
+			sourceTree = "<group>";
+		};
+		5F8802A6159387D400C5ADA2 /* UI Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5F88028B1592F24500C5ADA2 /* SDPNotificationPopup.h */,
+				5F88028C1592F24500C5ADA2 /* SDPNotificationPopup.m */,
+				5F88029015931C1D00C5ADA2 /* SDPStatusBarNotification.xib */,
+				5F8802A715938C2B00C5ADA2 /* SDPStatusBarNotificationViewController.h */,
+				5F8802A815938C2B00C5ADA2 /* SDPStatusBarNotificationViewController.m */,
+				5F8802A31593859100C5ADA2 /* SDPClickableTextField.h */,
+				5F8802A41593859100C5ADA2 /* SDPClickableTextField.m */,
+			);
+			name = "UI Extensions";
+			sourceTree = "<group>";
+		};
+		5FB1402F1535CCAB00A4565C = {
+			isa = PBXGroup;
+			children = (
+				5FB140441535CCAB00A4565C /* SourceDrop */,
+				5FB1403D1535CCAB00A4565C /* Frameworks */,
+				5FB1403B1535CCAB00A4565C /* Products */,
+				53935B4D6F58464D8C0F2568 /* Pods.xcconfig */,
+				28F28676A36342CFAABED150 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		5FB1403B1535CCAB00A4565C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FB1403A1535CCAB00A4565C /* SourceDrop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FB1403D1535CCAB00A4565C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FB1403E1535CCAB00A4565C /* Cocoa.framework */,
+				5FC1F4D0153C3E57009D5E15 /* Carbon.framework */,
+				5FB140401535CCAB00A4565C /* Other Frameworks */,
+				A2381D8F503F412282AA8913 /* libPods.a */,
+				61CBC006631241A283FE8000 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5FB140401535CCAB00A4565C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FE576731535E04A00D65C4F /* libz.dylib */,
+				5FB140411535CCAB00A4565C /* AppKit.framework */,
+				5FB140421535CCAB00A4565C /* CoreData.framework */,
+				5FE5766D1535DFEC00D65C4F /* CoreServices.framework */,
+				5FB140431535CCAB00A4565C /* Foundation.framework */,
+				5F9BF2BB1548278000770B83 /* IOKit.framework */,
+				5FE5766F1535E00600D65C4F /* SystemConfiguration.framework */,
+				5F5DBA4D155AAFCE00833BEE /* ServiceManagement.framework */,
+				5F9BF2B51548275800770B83 /* Security.framework */,
+				5FAB239615408583000A46F1 /* StoreKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5FB140441535CCAB00A4565C /* SourceDrop */ = {
+			isa = PBXGroup;
+			children = (
+				5FB140501535CCAB00A4565C /* SDPAppDelegate.h */,
+				5FB140511535CCAB00A4565C /* SDPAppDelegate.m */,
+				5FE5763F1535DBE500D65C4F /* Sharing API */,
+				5F2C16B51536DC81006F3C2A /* User Interface */,
+				5F6C02FF16B0500900C1E830 /* System Services */,
+				5F2C16EF1537281A006F3C2A /* Other Utilities */,
+				5FB1405F1535D5CF00A4565C /* Resources */,
+				5FB140451535CCAB00A4565C /* Supporting Files */,
+			);
+			path = SourceDrop;
+			sourceTree = "<group>";
+		};
+		5FB140451535CCAB00A4565C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F13745015D6B0C10091003F /* SourceDrop.iconset */,
+				5FB1404C1535CCAB00A4565C /* SourceDrop-Prefix.pch */,
+				5FB140461535CCAB00A4565C /* SourceDrop-Info.plist */,
+				5FFA20391546AF4E0092257A /* SourceDrop.entitlements */,
+				5FB140471535CCAB00A4565C /* InfoPlist.strings */,
+				5FB1404A1535CCAB00A4565C /* main.m */,
+				5FB1404D1535CCAB00A4565C /* Thanks.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5FB1405F1535D5CF00A4565C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5F18DBEE1544179A00FC25FE /* SDPWelcomeMessage.txt */,
+				5F3FCEE5153FF9A60030FC76 /* SDPSharingServices.plist */,
+				5FD5787F153C75B800818808 /* SDPUserDefaults.plist */,
+				5FB140601535D5FA00A4565C /* SDPStatusBarIcon.png */,
+				5F21395B1539C56C00D40300 /* SDPStatusBarAlternateIcon.png */,
+				5F7B4644153B2FB20066424F /* UploadNotification.wav */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5FC1F4BF153C3CC1009D5E15 /* ShortcutRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				5F209E7A153D94E500E9D40D /* PTHotKey */,
+				5FC1F4C0153C3CD3009D5E15 /* ShortcutRecorder.h */,
+				5FC1F4C1153C3CD3009D5E15 /* SRRecorderControl.h */,
+				5FC1F4C2153C3CD3009D5E15 /* SRRecorderControl.m */,
+				5FC1F4C3153C3CD3009D5E15 /* SRRecorderCell.h */,
+				5FC1F4C4153C3CD3009D5E15 /* SRRecorderCell.m */,
+				5FC1F4C5153C3CD3009D5E15 /* SRKeyCodeTransformer.h */,
+				5FC1F4C6153C3CD3009D5E15 /* SRKeyCodeTransformer.m */,
+				5FC1F4C7153C3CD3009D5E15 /* SRValidator.h */,
+				5FC1F4C8153C3CD3009D5E15 /* SRValidator.m */,
+				5FC1F4C9153C3CD3009D5E15 /* SRCommon.h */,
+				5FC1F4CA153C3CD3009D5E15 /* SRCommon.m */,
+			);
+			name = ShortcutRecorder;
+			sourceTree = "<group>";
+		};
+		5FE5763F1535DBE500D65C4F /* Sharing API */ = {
+			isa = PBXGroup;
+			children = (
+				5FE576401535DCAB00D65C4F /* SDPSharingInterface.h */,
+				5F8AEA0B1542C59D006B1AA3 /* SDPConfigurableInterface.h */,
+				5F8AEA0C1542C59D006B1AA3 /* SDPConfigurableInterface.m */,
+				5FAF1E7015542D7A00A7F6A9 /* SDPSourceDropInterface.h */,
+				5FAF1E7115542D7A00A7F6A9 /* SDPSourceDropInterface.m */,
+				5FE576411535DDD900D65C4F /* SDPPasteBinInterface.h */,
+				5FE576421535DDD900D65C4F /* SDPPasteBinInterface.m */,
+				5F2C16EC153725AE006F3C2A /* SDPTinyPasteInterface.h */,
+				5F2C16ED153725AE006F3C2A /* SDPTinyPasteInterface.m */,
+				5F2C16AF1535FEE8006F3C2A /* SDPGistInterface.h */,
+				5F2C16B01535FEE8006F3C2A /* SDPGistInterface.m */,
+			);
+			name = "Sharing API";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FB140391535CCAB00A4565C /* SourceDrop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FB140581535CCAB00A4565C /* Build configuration list for PBXNativeTarget "SourceDrop" */;
+			buildPhases = (
+				5FB140361535CCAB00A4565C /* Sources */,
+				5FB140371535CCAB00A4565C /* Frameworks */,
+				5F21392915388F0100D40300 /* ShellScript */,
+				5FB140381535CCAB00A4565C /* Resources */,
+				5FE1108116AFCCF9005E5ABD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SourceDrop;
+			productName = SourceDrop;
+			productReference = 5FB1403A1535CCAB00A4565C /* SourceDrop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FB140311535CCAB00A4565C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SDP;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Michael Hohl";
+			};
+			buildConfigurationList = 5FB140341535CCAB00A4565C /* Build configuration list for PBXProject "SourceDrop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5FB1402F1535CCAB00A4565C;
+			productRefGroup = 5FB1403B1535CCAB00A4565C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FB140391535CCAB00A4565C /* SourceDrop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FB140381535CCAB00A4565C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB140491535CCAB00A4565C /* InfoPlist.strings in Resources */,
+				5FB1404F1535CCAB00A4565C /* Thanks.rtf in Resources */,
+				5FB140551535CCAB00A4565C /* SDPStatusMenu.xib in Resources */,
+				5FB140611535D5FA00A4565C /* SDPStatusBarIcon.png in Resources */,
+				5F2C16D61536FDEB006F3C2A /* SDPGeneralPreferencesView.xib in Resources */,
+				5F2C16D81536FE68006F3C2A /* SDPAdvancedPreferencesView.xib in Resources */,
+				5F21395C1539C56C00D40300 /* SDPStatusBarAlternateIcon.png in Resources */,
+				5F7B4645153B2FB20066424F /* UploadNotification.wav in Resources */,
+				5FD57880153C75B800818808 /* SDPUserDefaults.plist in Resources */,
+				5F3FCEE6153FF9A60030FC76 /* SDPSharingServices.plist in Resources */,
+				5F18DBEF1544179A00FC25FE /* SDPWelcomeMessage.txt in Resources */,
+				5F88029115931C1D00C5ADA2 /* SDPStatusBarNotification.xib in Resources */,
+				5F2E0BFD15BC010E00DB0ACA /* SDPDetailedLogView.xib in Resources */,
+				5F13745115D6B0C10091003F /* SourceDrop.iconset in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F21392915388F0100D40300 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash    \nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"";
+		};
+		5FE1108116AFCCF9005E5ABD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FB140361535CCAB00A4565C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB1404B1535CCAB00A4565C /* main.m in Sources */,
+				5FB140521535CCAB00A4565C /* SDPAppDelegate.m in Sources */,
+				5FE576431535DDD900D65C4F /* SDPPasteBinInterface.m in Sources */,
+				5F2C16B11535FEE8006F3C2A /* SDPGistInterface.m in Sources */,
+				5F2C16B41536B39F006F3C2A /* SDPStatusItemController.m in Sources */,
+				5F2C16D41536FDC2006F3C2A /* SDPGeneralPreferencesViewController.m in Sources */,
+				5F2C16DB1536FE77006F3C2A /* SDPAdvancedPreferencesViewController.m in Sources */,
+				5F2C16EE153725AE006F3C2A /* SDPTinyPasteInterface.m in Sources */,
+				5F2C16F615372916006F3C2A /* NSString+MD5.m in Sources */,
+				5F213983153B066B00D40300 /* SDPNotificationController.m in Sources */,
+				5FC1F4CB153C3CD3009D5E15 /* SRRecorderControl.m in Sources */,
+				5FC1F4CC153C3CD3009D5E15 /* SRRecorderCell.m in Sources */,
+				5FC1F4CD153C3CD3009D5E15 /* SRKeyCodeTransformer.m in Sources */,
+				5FC1F4CE153C3CD3009D5E15 /* SRValidator.m in Sources */,
+				5FC1F4CF153C3CD3009D5E15 /* SRCommon.m in Sources */,
+				5F209E83153D950800E9D40D /* PTHotKey.m in Sources */,
+				5F209E84153D950800E9D40D /* PTHotKeyCenter.m in Sources */,
+				5F209E85153D950800E9D40D /* PTKeyCodeTranslator.m in Sources */,
+				5F209E86153D950800E9D40D /* PTKeyCombo.m in Sources */,
+				5F8AEA0D1542C59D006B1AA3 /* SDPConfigurableInterface.m in Sources */,
+				5F18DC0A15446A2300FC25FE /* SDPRecentUploadsController.m in Sources */,
+				5F18DC0D1544751800FC25FE /* NSString+Utils.m in Sources */,
+				5F781CF31549705E0003733A /* NSData+Utils.m in Sources */,
+				5FAF1E7215542D7A00A7F6A9 /* SDPSourceDropInterface.m in Sources */,
+				5FAF1EC91556A5C700A7F6A9 /* SDPServicesProvider.m in Sources */,
+				5F88028D1592F24500C5ADA2 /* SDPNotificationPopup.m in Sources */,
+				5F8802A51593859100C5ADA2 /* SDPClickableTextField.m in Sources */,
+				5F8802A915938C2B00C5ADA2 /* SDPStatusBarNotificationViewController.m in Sources */,
+				5F8802BD15944D4500C5ADA2 /* NSString+Size.m in Sources */,
+				5F660DBA159DD3C0002A8F9C /* NSData+AES256.m in Sources */,
+				5F9D98D915BAE34500B0FF2B /* NSString+BASE64.m in Sources */,
+				5F2E0BFB15BBFFAE00DB0ACA /* SDPUploadFailureController.m in Sources */,
+				5F2E0C1515BCA0F600DB0ACA /* EMKeychainItem.m in Sources */,
+				5F2E0C1815BCA31600DB0ACA /* SDPAuthenticationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5FB140471535CCAB00A4565C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FB140481535CCAB00A4565C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5FB1404D1535CCAB00A4565C /* Thanks.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FB1404E1535CCAB00A4565C /* en */,
+			);
+			name = Thanks.rtf;
+			sourceTree = "<group>";
+		};
+		5FB140531535CCAB00A4565C /* SDPStatusMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FB140541535CCAB00A4565C /* en */,
+			);
+			name = SDPStatusMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5FB140561535CCAB00A4565C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "";
+			};
+			name = Debug;
+		};
+		5FB140571535CCAB00A4565C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = "";
+			};
+			name = Release;
+		};
+		5FB140591535CCAB00A4565C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28F28676A36342CFAABED150 /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = SourceDrop/SourceDrop.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SourceDrop/SourceDrop-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SourceDrop/SourceDrop-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
+				PLIST_FILE_OUTPUT_FORMAT = binary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		5FB1405A1535CCAB00A4565C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28F28676A36342CFAABED150 /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = SourceDrop/SourceDrop.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SourceDrop/SourceDrop-Prefix.pch";
+				INFOPLIST_FILE = "SourceDrop/SourceDrop-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
+				PLIST_FILE_OUTPUT_FORMAT = binary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FB140341535CCAB00A4565C /* Build configuration list for PBXProject "SourceDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FB140561535CCAB00A4565C /* Debug */,
+				5FB140571535CCAB00A4565C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FB140581535CCAB00A4565C /* Build configuration list for PBXNativeTarget "SourceDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FB140591535CCAB00A4565C /* Debug */,
+				5FB1405A1535CCAB00A4565C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5FB140311535CCAB00A4565C /* Project object */;
+}

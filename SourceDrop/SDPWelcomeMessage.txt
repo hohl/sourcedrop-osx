@@ -1,0 +1,1 @@
+SourceDrop is now running. You can find it at the right side of your menu bar. Drop a source snippet or file at the icon to upload it to a PasteBin service.

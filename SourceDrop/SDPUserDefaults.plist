@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SDPCopyPasteBinLinkToClipboard</key>
+	<true/>
+	<key>SDPPlayUploadSound</key>
+	<true/>
+	<key>SDPUseGrowlForNotification</key>
+	<false/>
+	<key>SDPLaunchAtLogin</key>
+	<false/>
+	<key>SDPUsePrivateUploads</key>
+	<true/>
+	<key>SDPUseSyntaxHighlighting</key>
+	<true/>
+	<key>SDPUseSecureUploads</key>
+	<false/>
+	<key>SDPUseAuthentication</key>
+	<false/>
+	<key>SDPUsedSharingService</key>
+	<string>SourceDrop</string>
+	<key>SDPHasLaunchedBefore</key>
+	<false/>
+	<key>SDPRecentUploads</key>
+	<array/>
+	<key>SDPMaxRecentUploads</key>
+	<integer>7</integer>
+	<key>SDPPreventInfoPopover</key>
+	<false/>
+</dict>
+</plist>

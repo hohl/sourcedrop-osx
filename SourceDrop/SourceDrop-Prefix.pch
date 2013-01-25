@@ -1,0 +1,35 @@
+//
+// Prefix header for all source files of the 'SourceDrop' target in the 'SourceDrop' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+    #import <StoreKit/StoreKit.h>
+    //#import <SBJson/SBJson.h>
+#import "SBJson.h"
+#import <ASIHTTPRequest.h>
+#import <ASIFormDataRequest.h>
+    #import "NSStatusItem+BCStatusItem.h"
+    //
+    // MACRO_VALUE(f) retrieves the value of the macro with the passed name.
+    //
+    // @param f the macro name
+    // @return the value of the macro
+    // 
+    #define MACRO_VALUE(f) #f
+
+    //
+    // MACRO_NSSTRING(f) retrieves the value of the macro as a ObjC NSString.
+    //
+    // @param f the macro name
+    // @return the value of the macro
+    //
+    #define MACRO_NSSTRING(f) @MACRO_VALUE(f)
+
+    #ifdef DEBUG
+        #define DLog( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+    #else
+        #define DLog( s, ... ) 
+    #endif
+#endif
+

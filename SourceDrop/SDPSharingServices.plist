@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TinyPaste</key>
+	<dict>
+		<key>ClassName</key>
+		<string>SDPTinyPasteInterface</string>
+		<key>Properties</key>
+		<dict>
+			<key>Get URL</key>
+			<string>http://tny.cz/%@</string>
+			<key>Post URL</key>
+			<string>http://tny.cz/api/create.json</string>
+		</dict>
+	</dict>
+	<key>PasteBin</key>
+	<dict>
+		<key>ClassName</key>
+		<string>SDPPasteBinInterface</string>
+		<key>Properties</key>
+		<dict>
+			<key>API Key</key>
+			<string>974d937b02f02b07f998da53b26265dc</string>
+			<key>Post URL</key>
+			<string>http://pastebin.com/api/api_post.php</string>
+			<key>Authentication URL</key>
+			<string>http://pastebin.com/api/api_login.php</string>
+		</dict>
+	</dict>
+	<key>GIST (GitHub)</key>
+	<dict>
+		<key>ClassName</key>
+		<string>SDPGistInterface</string>
+		<key>Properties</key>
+		<dict>
+			<key>Post URL</key>
+			<string>https://api.github.com/gists</string>
+			<key>Secure Post URL</key>
+			<string>https://api.github.com/gists</string>
+		</dict>
+	</dict>
+	<key>SourceDrop</key>
+	<dict>
+		<key>ClassName</key>
+		<string>SDPSourceDropInterface</string>
+		<key>Properties</key>
+		<dict>
+			<key>Always Private Uploads</key>
+			<integer>1</integer>
+			<key>Post URL</key>
+			<string>http://www.sourcedrop.net/paste</string>
+			<key>Content Size Limit</key>
+			<integer>4194304</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>
