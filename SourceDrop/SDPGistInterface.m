@@ -74,6 +74,7 @@ static NSString *SDPExpectedFailureResponseForTooMuchLogins = @"Max number of lo
     if (_username && _password) {
         [request setUsername:_username];
         [request setPassword:_password];
+        [request setAuthenticationScheme:(NSString *)kCFHTTPAuthenticationSchemeBasic];
     }
     [request setUserInfo:userInfo];
     [request setDelegate:self];
