@@ -59,6 +59,9 @@
 		5FC1F4CE153C3CD3009D5E15 /* SRValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC1F4C8153C3CD3009D5E15 /* SRValidator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5FC1F4CF153C3CD3009D5E15 /* SRCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC1F4CA153C3CD3009D5E15 /* SRCommon.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5FC1F4D1153C3E57009D5E15 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC1F4D0153C3E57009D5E15 /* Carbon.framework */; };
+		5FC33C6E16BFCBE80006019F /* SDPInfoPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC33C6C16BFCBE80006019F /* SDPInfoPreferencesViewController.m */; };
+		5FC33C6F16BFCBE80006019F /* SDPInfoPreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FC33C6D16BFCBE80006019F /* SDPInfoPreferencesView.xib */; };
+		5FC33C7116BFCD3B0006019F /* SourceDrop-92px.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FC33C7016BFCD3B0006019F /* SourceDrop-92px.png */; };
 		5FD57880153C75B800818808 /* SDPUserDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FD5787F153C75B800818808 /* SDPUserDefaults.plist */; };
 		5FE576431535DDD900D65C4F /* SDPPasteBinInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE576421535DDD900D65C4F /* SDPPasteBinInterface.m */; };
 		5FE5766E1535DFEC00D65C4F /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE5766D1535DFEC00D65C4F /* CoreServices.framework */; };
@@ -161,6 +164,10 @@
 		5FC1F4C9153C3CD3009D5E15 /* SRCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCommon.h; sourceTree = "<group>"; };
 		5FC1F4CA153C3CD3009D5E15 /* SRCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRCommon.m; sourceTree = "<group>"; };
 		5FC1F4D0153C3E57009D5E15 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		5FC33C6B16BFCBE80006019F /* SDPInfoPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPInfoPreferencesViewController.h; sourceTree = "<group>"; };
+		5FC33C6C16BFCBE80006019F /* SDPInfoPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPInfoPreferencesViewController.m; sourceTree = "<group>"; };
+		5FC33C6D16BFCBE80006019F /* SDPInfoPreferencesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDPInfoPreferencesView.xib; sourceTree = "<group>"; };
+		5FC33C7016BFCD3B0006019F /* SourceDrop-92px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SourceDrop-92px.png"; sourceTree = "<group>"; };
 		5FD5787F153C75B800818808 /* SDPUserDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SDPUserDefaults.plist; sourceTree = "<group>"; };
 		5FE576401535DCAB00D65C4F /* SDPSharingInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDPSharingInterface.h; sourceTree = "<group>"; };
 		5FE576411535DDD900D65C4F /* SDPPasteBinInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPPasteBinInterface.h; sourceTree = "<group>"; };
@@ -239,6 +246,9 @@
 				5F2C16DA1536FE77006F3C2A /* SDPAdvancedPreferencesViewController.m */,
 				5F2E0C1615BCA31600DB0ACA /* SDPAuthenticationController.h */,
 				5F2E0C1715BCA31600DB0ACA /* SDPAuthenticationController.m */,
+				5FC33C6D16BFCBE80006019F /* SDPInfoPreferencesView.xib */,
+				5FC33C6B16BFCBE80006019F /* SDPInfoPreferencesViewController.h */,
+				5FC33C6C16BFCBE80006019F /* SDPInfoPreferencesViewController.m */,
 			);
 			name = Preferences;
 			sourceTree = "<group>";
@@ -379,6 +389,7 @@
 				5F18DBEE1544179A00FC25FE /* SDPWelcomeMessage.txt */,
 				5F3FCEE5153FF9A60030FC76 /* SDPSharingServices.plist */,
 				5FD5787F153C75B800818808 /* SDPUserDefaults.plist */,
+				5FC33C7016BFCD3B0006019F /* SourceDrop-92px.png */,
 				5FB140601535D5FA00A4565C /* SDPStatusBarIcon.png */,
 				5F21395B1539C56C00D40300 /* SDPStatusBarAlternateIcon.png */,
 				5F7B4644153B2FB20066424F /* UploadNotification.wav */,
@@ -491,6 +502,8 @@
 				5F88029115931C1D00C5ADA2 /* SDPStatusBarNotification.xib in Resources */,
 				5F2E0BFD15BC010E00DB0ACA /* SDPDetailedLogView.xib in Resources */,
 				5F13745115D6B0C10091003F /* SourceDrop.iconset in Resources */,
+				5FC33C6F16BFCBE80006019F /* SDPInfoPreferencesView.xib in Resources */,
+				5FC33C7116BFCD3B0006019F /* SourceDrop-92px.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,6 +577,7 @@
 				5F2E0BFB15BBFFAE00DB0ACA /* SDPUploadFailureController.m in Sources */,
 				5F2E0C1515BCA0F600DB0ACA /* EMKeychainItem.m in Sources */,
 				5F2E0C1815BCA31600DB0ACA /* SDPAuthenticationController.m in Sources */,
+				5FC33C6E16BFCBE80006019F /* SDPInfoPreferencesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

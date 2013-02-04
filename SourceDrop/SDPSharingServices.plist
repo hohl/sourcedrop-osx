@@ -51,7 +51,7 @@
 			<key>Post URL</key>
 			<string>http://www.sourcedrop.net/paste</string>
 			<key>Content Size Limit</key>
-			<integer>4194304</integer>
+			<integer>5242880</integer>
 		</dict>
 	</dict>
 </dict>

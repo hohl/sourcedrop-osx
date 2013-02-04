@@ -9,6 +9,7 @@
 #import "SDPAppDelegate.h"
 #import "SDPGeneralPreferencesViewController.h"
 #import "SDPAdvancedPreferencesViewController.h"
+#import "SDPInfoPreferencesViewController.h"
 #import "SDPConfigurableInterface.h"
 #import "SDPServicesProvider.h"
 #import "SDPNotificationPopup.h"
@@ -143,6 +144,7 @@
         NSMutableArray *viewControllers = [NSMutableArray arrayWithCapacity:2];
         [viewControllers addObject:[[SDPGeneralPreferencesViewController alloc] init]];
         [viewControllers addObject:[[SDPAdvancedPreferencesViewController alloc] init]];
+        [viewControllers addObject:[[SDPInfoPreferencesViewController alloc] init]];
 
         NSString *windowTitle = NSLocalizedString(@"Preferences", @"Title of the Preferences Window");
         _preferencesWindowController = [[MASPreferencesWindowController alloc] initWithViewControllers:viewControllers title:windowTitle];
