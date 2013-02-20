@@ -668,7 +668,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "SourceDrop/SourceDrop-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PLIST_FILE_OUTPUT_FORMAT = binary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -688,7 +688,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SourceDrop/SourceDrop-Prefix.pch";
 				INFOPLIST_FILE = "SourceDrop/SourceDrop-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PLIST_FILE_OUTPUT_FORMAT = binary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
