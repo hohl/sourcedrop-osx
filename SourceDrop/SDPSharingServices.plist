@@ -2,6 +2,24 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NoPaste</key>
+	<dict>
+		<key>ClassName</key>
+		<string>SDPNoPasteInterface</string>
+		<key>Properties</key>
+		<dict>
+			<key>Post URL</key>
+			<string>http://nopaste.linux-dev.org/</string>
+			<key>Expires</key>
+			<string>6h</string>
+			<key>Name</key>
+			<string>Anonymous</string>
+			<key>Language</key>
+			<string>Plain</string>
+			<key>Response URL Regex</key>
+			<string>http://nopaste.linux-dev.org/\?[0-9]+</string>
+		</dict>
+	</dict>
 	<key>TinyPaste</key>
 	<dict>
 		<key>ClassName</key>
