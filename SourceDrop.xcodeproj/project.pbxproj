@@ -68,6 +68,7 @@
 		5FE576701535E00600D65C4F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE5766F1535E00600D65C4F /* SystemConfiguration.framework */; };
 		5FE576741535E04A00D65C4F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE576731535E04A00D65C4F /* libz.dylib */; };
 		76D31988ACEB45EF9AAE25B5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CBC006631241A283FE8000 /* libPods.a */; };
+		E5CBA49717101A9F00617A45 /* SDPNoPasteInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CBA49617101A9F00617A45 /* SDPNoPasteInterface.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -178,6 +179,8 @@
 		5FFA20391546AF4E0092257A /* SourceDrop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SourceDrop.entitlements; sourceTree = "<group>"; };
 		61CBC006631241A283FE8000 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2381D8F503F412282AA8913 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5CBA49517101A9F00617A45 /* SDPNoPasteInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPNoPasteInterface.h; sourceTree = "<group>"; };
+		E5CBA49617101A9F00617A45 /* SDPNoPasteInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPNoPasteInterface.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -419,6 +422,8 @@
 		5FE5763F1535DBE500D65C4F /* Sharing API */ = {
 			isa = PBXGroup;
 			children = (
+				E5CBA49517101A9F00617A45 /* SDPNoPasteInterface.h */,
+				E5CBA49617101A9F00617A45 /* SDPNoPasteInterface.m */,
 				5FE576401535DCAB00D65C4F /* SDPSharingInterface.h */,
 				5F8AEA0B1542C59D006B1AA3 /* SDPConfigurableInterface.h */,
 				5F8AEA0C1542C59D006B1AA3 /* SDPConfigurableInterface.m */,
@@ -578,6 +583,7 @@
 				5F2E0C1515BCA0F600DB0ACA /* EMKeychainItem.m in Sources */,
 				5F2E0C1815BCA31600DB0ACA /* SDPAuthenticationController.m in Sources */,
 				5FC33C6E16BFCBE80006019F /* SDPInfoPreferencesViewController.m in Sources */,
+				E5CBA49717101A9F00617A45 /* SDPNoPasteInterface.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,7 +665,7 @@
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = SourceDrop/SourceDrop.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SourceDrop/SourceDrop-Prefix.pch";
@@ -683,7 +689,7 @@
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = SourceDrop/SourceDrop.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SourceDrop/SourceDrop-Prefix.pch";
