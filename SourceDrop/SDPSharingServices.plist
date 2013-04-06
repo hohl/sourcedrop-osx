@@ -8,10 +8,12 @@
 		<string>SDPNoPasteInterface</string>
 		<key>Properties</key>
 		<dict>
+			<key>Always Private Uploads</key>
+			<integer>1</integer>
 			<key>Post URL</key>
 			<string>http://nopaste.linux-dev.org/</string>
 			<key>Expires</key>
-			<string>6h</string>
+			<string>never</string>
 			<key>Name</key>
 			<string>Anonymous</string>
 			<key>Language</key>

@@ -422,19 +422,19 @@
 		5FE5763F1535DBE500D65C4F /* Sharing API */ = {
 			isa = PBXGroup;
 			children = (
-				E5CBA49517101A9F00617A45 /* SDPNoPasteInterface.h */,
-				E5CBA49617101A9F00617A45 /* SDPNoPasteInterface.m */,
 				5FE576401535DCAB00D65C4F /* SDPSharingInterface.h */,
 				5F8AEA0B1542C59D006B1AA3 /* SDPConfigurableInterface.h */,
 				5F8AEA0C1542C59D006B1AA3 /* SDPConfigurableInterface.m */,
-				5FAF1E7015542D7A00A7F6A9 /* SDPSourceDropInterface.h */,
-				5FAF1E7115542D7A00A7F6A9 /* SDPSourceDropInterface.m */,
-				5FE576411535DDD900D65C4F /* SDPPasteBinInterface.h */,
-				5FE576421535DDD900D65C4F /* SDPPasteBinInterface.m */,
-				5F2C16EC153725AE006F3C2A /* SDPTinyPasteInterface.h */,
-				5F2C16ED153725AE006F3C2A /* SDPTinyPasteInterface.m */,
 				5F2C16AF1535FEE8006F3C2A /* SDPGistInterface.h */,
 				5F2C16B01535FEE8006F3C2A /* SDPGistInterface.m */,
+				E5CBA49517101A9F00617A45 /* SDPNoPasteInterface.h */,
+				E5CBA49617101A9F00617A45 /* SDPNoPasteInterface.m */,
+				5F2C16EC153725AE006F3C2A /* SDPTinyPasteInterface.h */,
+				5F2C16ED153725AE006F3C2A /* SDPTinyPasteInterface.m */,
+				5FE576411535DDD900D65C4F /* SDPPasteBinInterface.h */,
+				5FE576421535DDD900D65C4F /* SDPPasteBinInterface.m */,
+				5FAF1E7015542D7A00A7F6A9 /* SDPSourceDropInterface.h */,
+				5FAF1E7115542D7A00A7F6A9 /* SDPSourceDropInterface.m */,
 			);
 			name = "Sharing API";
 			sourceTree = "<group>";
