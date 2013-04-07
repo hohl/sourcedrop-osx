@@ -2,7 +2,7 @@
 
 [SourceDrop for OS X](http://sourcedrop.net/mac) is a PasteBin client which allows you to easily share your snippets by drag and drop. Just drop your snippet on the SourceDrop icon and it will be uploaded to the configured PasteBin provider, supporting all common PasteBin providers like TinyPaste, PasteBin.com and GIST.
 
-**You can download SourceDrop for OS X [free on the App Store](http://itunes.com/mac/michaelhohl/sourcedrop).**
+**You can download SourceDrop for OS X [on the App Store](http://itunes.com/mac/michaelhohl/sourcedrop).**
 
 
 ## Getting Started
