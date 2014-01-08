@@ -26,12 +26,12 @@ static NSString *SDPSharedCodeNotification = @"SDPSharedCodeNotification";
 ///
 /// Notification is called when the authentication failed.
 ///
-static NSString *SDPAuthenticationFailed = @"SDPFinishedNotification";
+static NSString *SDPAuthenticationFailedNotification = @"SDPAuthenticationFailedNotification";
 
 ///
 /// Notification is called when the authentication was successful.
 ///
-static NSString *SDPAuthenticated = @"SDPAuthenticated";
+static NSString *SDPSuccessfullyAuthenticatedNotification = @"SDPAuthenticated";
 
 
 /// Possible reasons for a failure. (Will be the object of the failure notification)

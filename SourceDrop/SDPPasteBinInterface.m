@@ -119,12 +119,23 @@ enum {
     }
     else if (request.tag == SDPNetworkRequestAuthenticationTag)
     {
-        DLog(@"Authentication result");
-        _authenticationFailed = NO;
-        _authenticationToken = responseString;
-        [[NSNotificationCenter defaultCenter] postNotificationName:SDPAuthenticated 
-                                                            object:self
-                                                          userInfo:self.notificationUserInfo];
+        DLog(@"Authentication result: %@", responseString);
+        NSString *const kBadAPIRequstRespons = @"Bad API request,";
+        if ([[responseString substringToIndex:[kBadAPIRequstRespons length]] isEqualToString:kBadAPIRequstRespons])
+        {
+            _authenticationFailed = YES;
+            [[NSNotificationCenter defaultCenter] postNotificationName:SDPAuthenticationFailedNotification
+                                                                object:self
+                                                              userInfo:self.notificationUserInfo];
+        }
+        else
+        {
+            _authenticationFailed = NO;
+            _authenticationToken = responseString;
+            [[NSNotificationCenter defaultCenter] postNotificationName:SDPSuccessfullyAuthenticatedNotification
+                                                                object:self
+                                                              userInfo:self.notificationUserInfo];
+        }
     }
     
 }
@@ -146,7 +157,7 @@ enum {
     {
         DLog(@"Authentication failed due to network failure.");
         _authenticationFailed = YES;
-        [[NSNotificationCenter defaultCenter] postNotificationName:SDPAuthenticationFailed 
+        [[NSNotificationCenter defaultCenter] postNotificationName:SDPAuthenticationFailedNotification 
                                                             object:self
                                                           userInfo:userInfo];
     }

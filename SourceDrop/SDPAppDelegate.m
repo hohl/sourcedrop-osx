@@ -219,5 +219,4 @@
 	[[PTHotKeyCenter sharedCenter] registerHotKey:_globalHotKey];
 }
 
-
 @end

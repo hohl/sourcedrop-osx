@@ -32,6 +32,10 @@
                                                  selector:@selector(handleFailedSharingCode:)
                                                      name:SDPCodeSharingFailedNotification
                                                    object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(handleUploadFailed:)
+                                                     name:SDPAuthenticationFailedNotification
+                                                   object:nil];
     }
     return self;
 }
@@ -86,6 +90,12 @@
     {
         [self sendLogToDeveloper:nil];
     }
+}
+
+- (void)handleUploadFailed:(NSNotification *)notification
+{
+    NSAlert *alert = [NSAlert alertWithMessageText:NSLocalizedString(@"Authentication Failed!", nil) defaultButton:NSLocalizedString(@"OK", nil) alternateButton:nil otherButton:nil informativeTextWithFormat:nil];
+    [alert runModal];
 }
 
 
