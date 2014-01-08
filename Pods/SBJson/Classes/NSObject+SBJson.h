@@ -1,20 +1,20 @@
 /*
  Copyright (C) 2009 Stig Brautaset. All rights reserved.
- 
+
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions are met:
- 
+
  * Redistributions of source code must retain the above copyright notice, this
    list of conditions and the following disclaimer.
- 
+
  * Redistributions in binary form must reproduce the above copyright notice,
    this list of conditions and the following disclaimer in the documentation
    and/or other materials provided with the distribution.
- 
+
  * Neither the name of the author nor the names of its contributors may be used
    to endorse or promote products derived from this software without specific
    prior written permission.
- 
+
  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
@@ -35,15 +35,16 @@
 @interface NSObject (NSObject_SBJsonWriting)
 
 /**
- @brief Encodes the receiver into a JSON string
- 
+ Encodes the receiver into a JSON string
+
  Although defined as a category on NSObject it is only defined for NSArray and NSDictionary.
- 
+
  @return the receiver encoded in JSON, or nil on error.
- 
- @see @ref objc2json
+
+ @warning Deprecated in Version 3.2; will be removed in 4.0
+
  */
-- (NSString *)JSONRepresentation;
+- (NSString *)JSONRepresentation __attribute__ ((deprecated));
 
 @end
 
@@ -54,13 +55,14 @@
 @interface NSString (NSString_SBJsonParsing)
 
 /**
- @brief Decodes the receiver's JSON text
- 
+ Decodes the receiver's JSON text
+
  @return the NSDictionary or NSArray represented by the receiver, or nil on error.
- 
- @see @ref json2objc
+
+ @warning Deprecated in Version 3.2; will be removed in 4.0
+
  */
-- (id)JSONValue;
+- (id)JSONValue __attribute__ ((deprecated));
 
 @end
 
@@ -68,12 +70,13 @@
 @interface NSData (NSData_SBJsonParsing)
 
 /**
- @brief Decodes the receiver's JSON data
- 
+ Decodes the receiver's JSON data
+
  @return the NSDictionary or NSArray represented by the receiver, or nil on error.
- 
- @see @ref json2objc
+
+ @warning Deprecated in Version 3.2; will be removed in 4.0
+
  */
-- (id)JSONValue;
+- (id)JSONValue __attribute__ ((deprecated));
 
 @end

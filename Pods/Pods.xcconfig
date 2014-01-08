@@ -1,7 +1,4 @@
-ALWAYS_SEARCH_USER_PATHS = YES
-HEADER_SEARCH_PATHS = ${PODS_HEADERS_SEARCH_PATHS} $(SDKROOT)/usr/include/libxml2
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/ASIHTTPRequest" "${PODS_ROOT}/Headers/BCStatusItem" "${PODS_ROOT}/Headers/MASPreferences" "${PODS_ROOT}/Headers/SBJson" "$(SDKROOT)/usr/include/libxml2"
 OTHER_LDFLAGS = -ObjC -lxml2.2 -lz.1 -framework CoreServices -framework SystemConfiguration
-PODS_BUILD_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/ASIHTTPRequest" "${PODS_ROOT}/BuildHeaders/BCStatusItem" "${PODS_ROOT}/BuildHeaders/MASPreferences" "${PODS_ROOT}/BuildHeaders/SBJson"
-PODS_HEADERS_SEARCH_PATHS = ${PODS_PUBLIC_HEADERS_SEARCH_PATHS}
-PODS_PUBLIC_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/ASIHTTPRequest" "${PODS_ROOT}/Headers/BCStatusItem" "${PODS_ROOT}/Headers/MASPreferences" "${PODS_ROOT}/Headers/SBJson"
 PODS_ROOT = ${SRCROOT}/Pods

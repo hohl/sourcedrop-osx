@@ -29,6 +29,10 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+#if !__has_feature(objc_arc)
+#error "This source file must be compiled with ARC enabled!"
+#endif
+
 #import "SBJsonTokeniser.h"
 #import "SBJsonUTF8Stream.h"
 
@@ -367,7 +371,8 @@ static NSCharacterSet *kDecimalDigitCharacterSet;
     if (mantissa_length <= LONG_LONG_DIGITS) {
         if (!isFloat && !hasExponent) {
             *token = [NSNumber numberWithLongLong: isNegative ? -mantissa : mantissa];
-
+        } else if (mantissa == 0) {
+            *token = [NSNumber numberWithFloat:-0.0f];
         } else {
             *token = [NSDecimalNumber decimalNumberWithMantissa:mantissa
                                                        exponent:exponent

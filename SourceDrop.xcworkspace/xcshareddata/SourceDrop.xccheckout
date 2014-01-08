@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>00992EE1-2176-4742-B6C5-5EA894B745DF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SourceDrop</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>414C62BF-4C49-42A5-A51B-0106E052157F</key>
+		<string>https://github.com/hohl/sourcedrop-osx.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SourceDrop.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>414C62BF-4C49-42A5-A51B-0106E052157F</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/hohl/sourcedrop-osx.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>414C62BF-4C49-42A5-A51B-0106E052157F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>414C62BF-4C49-42A5-A51B-0106E052157F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>sourcedrop-osx</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,29 @@
+PODS:
+  - ASIHTTPRequest (1.8.1):
+    - ASIHTTPRequest/ASIWebPageRequest
+    - ASIHTTPRequest/CloudFiles
+    - ASIHTTPRequest/S3
+    - Reachability
+  - ASIHTTPRequest/ASIWebPageRequest (1.8.1):
+    - Reachability
+  - ASIHTTPRequest/CloudFiles (1.8.1):
+    - Reachability
+  - ASIHTTPRequest/S3 (1.8.1):
+    - Reachability
+  - BCStatusItem (0.0.1)
+  - MASPreferences (1.1)
+  - SBJson (3.2)
+
+DEPENDENCIES:
+  - ASIHTTPRequest (~> 1.8)
+  - BCStatusItem (= 0.0.1)
+  - MASPreferences (~> 1.0)
+  - SBJson (~> 3.1)
+
+SPEC CHECKSUMS:
+  ASIHTTPRequest: 162783e0cd71bdd3ff1ceed0cd5fa9505e0116a8
+  BCStatusItem: 1f0839566d8b82a49ebbd5106e1a26d39ca31abf
+  MASPreferences: 103fda1283c701dfed5503edbe24b1ab504ed6d9
+  SBJson: abc2bf2baef456d5dae213f9826fe2b6fdf19861
+
+COCOAPODS: 0.26.2
