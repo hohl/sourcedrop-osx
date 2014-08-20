@@ -69,9 +69,9 @@
 			<key>Always Private Uploads</key>
 			<integer>1</integer>
 			<key>Post URL</key>
-			<string>http://www.sourcedrop.net/paste</string>
+			<string>http://sourcedrop.net/paste</string>
 			<key>Content Size Limit</key>
-			<integer>5242880</integer>
+			<real>5242880</real>
 		</dict>
 	</dict>
 </dict>

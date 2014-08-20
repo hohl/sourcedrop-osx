@@ -470,6 +470,11 @@
 				CLASSPREFIX = SDP;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Michael Hohl";
+				TargetAttributes = {
+					5FB140391535CCAB00A4565C = {
+						DevelopmentTeam = BC29VCSV5D;
+					};
+				};
 			};
 			buildConfigurationList = 5FB140341535CCAB00A4565C /* Build configuration list for PBXProject "SourceDrop" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -662,10 +667,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 28F28676A36342CFAABED150 /* Pods.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = SourceDrop/SourceDrop.entitlements;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SourceDrop/SourceDrop-Prefix.pch";
@@ -686,10 +690,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 28F28676A36342CFAABED150 /* Pods.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = SourceDrop/SourceDrop.entitlements;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SourceDrop/SourceDrop-Prefix.pch";
