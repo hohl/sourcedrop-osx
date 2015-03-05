@@ -26,7 +26,7 @@ This is open source since the app is free already. It is intended to be a source
 
 SourceDrop for OS X is released under the [Simplified BSD License](https://github.com/hohl/sourcedrop-osx/blob/master/LICENSE).
 
-While it is not strictly forbidden by the license, I would greatly appreciate it if you didn't redistribute this app exactly the way it is in the App Store. There's nothing stopping you, but please don't be a jerk.
+While it is not strictly forbidden by the license, I would greatly appreciate it if you won't redistribute this app exactly the way it is in the App Store. There's nothing stopping you, but please don't be a jerk.
 
 
 ## Give Back
