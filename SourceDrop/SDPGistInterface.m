@@ -30,7 +30,7 @@ static NSString *SDPExpectedFailureResponseForTooMuchLogins = @"Max number of lo
 - (void)shareCodeString:(NSString *)sourceString
 {
     NSMutableDictionary *postDict = [NSMutableDictionary dictionaryWithCapacity:3];
-    [postDict setObject:(self.privateUploads ? @"0" : @"1") forKey:@"public"];
+    [postDict setObject:(self.privateUploads ? @"false" : @"true") forKey:@"public"];
 
     NSDictionary *file = [NSDictionary dictionaryWithObject:sourceString forKey:@"content"];
     NSDictionary *files = [NSDictionary dictionaryWithObject:file forKey:@"content"];
@@ -54,7 +54,7 @@ static NSString *SDPExpectedFailureResponseForTooMuchLogins = @"Max number of lo
 - (void)shareCodeFiles:(NSArray *)sourceFiles
 {
     NSMutableDictionary *postDict = [NSMutableDictionary dictionaryWithCapacity:3];
-    [postDict setObject:(self.privateUploads ? @"0" : @"1") forKey:@"public"];
+    [postDict setObject:(self.privateUploads ? @"false" : @"true") forKey:@"public"];
     NSMutableDictionary *files = [NSMutableDictionary dictionaryWithCapacity:sourceFiles.count];
     [postDict setObject:files forKey:@"files"];
     for (NSURL *sourceFile in sourceFiles) {
