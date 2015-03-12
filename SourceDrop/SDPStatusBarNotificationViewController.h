@@ -28,6 +28,6 @@
 ///
 /// @deprecated
 ///
-- (id)initWithMessage:(NSString *)message description:(NSString *)description;
+- (id)initWithMessage:(NSString *)message description:(NSString *)descriptionMessage;
 
 @end

@@ -17,13 +17,13 @@
 @implementation SDPStatusBarNotificationViewController
 @synthesize closingDelay = _closingDelay;
 
-- (id)initWithMessage:(NSString *)message description:(NSString *)description
+- (id)initWithMessage:(NSString *)message description:(NSString *)descriptionMessage
 {
     self = [super initWithNibName:@"SDPStatusBarNotification" bundle:nil];
     if (self)
     {
         _message = message;
-        _description = description;
+        _descriptionMessage = descriptionMessage;
         _closingDelay = 5.0; // seconds
     }
     return self;
@@ -48,10 +48,10 @@
     
     // calculate sizes for the description
     NSSize descriptionTextSize;
-    if (self.description != nil)
+    if (self.descriptionMessage != nil)
     {
-        _descriptionField.stringValue = self.description;
-        descriptionTextSize = [self.description sizeWithWidth:popoverMessageWidth andFont:_descriptionField.font];
+        _descriptionField.stringValue = self.descriptionMessage;
+        descriptionTextSize = [self.descriptionMessage sizeWithWidth:popoverMessageWidth andFont:_descriptionField.font];
         descriptionTextSize = NSMakeSize(descriptionTextSize.width + TextPadding.width, descriptionTextSize.height + TextPadding.height);
     }
     else

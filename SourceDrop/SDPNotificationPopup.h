@@ -33,14 +33,14 @@
 @interface SDPNotificationPopup : NSViewController<NSPopoverDelegate> {
     @protected
     NSString *_message;
-    NSString *_description;
+    NSString *_descriptionMessage;
 }
 
 /// message to be displayed at the popover
 @property (copy, readonly) NSString *message;
 
 /// message to be displayed at the popover
-@property (copy, readonly) NSString *description;
+@property (copy, readonly) NSString *descriptionMessage;
 
 /// delegate to handle the clicks on the notification
 @property (unsafe_unretained) id<SDPStatusBarNotificationDelegate> delegate;
@@ -55,7 +55,7 @@
 /// @param description which is displayed as the smaller detail of the notification
 /// @return controller created for the notification
 ///
-+ (SDPNotificationPopup *)notificationWithMessage:(NSString *)message description:(NSString *)description;
++ (SDPNotificationPopup *)notificationWithMessage:(NSString *)message description:(NSString *)descriptionMessage;
 
 ///
 /// Displays the popup for the notification.

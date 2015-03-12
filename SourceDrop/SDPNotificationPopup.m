@@ -11,12 +11,12 @@
 
 @implementation SDPNotificationPopup
 
-+ (SDPNotificationPopup *)notificationWithMessage:(NSString *)message description:(NSString *)description
++ (SDPNotificationPopup *)notificationWithMessage:(NSString *)message description:(NSString *)descriptionMessage
 {
     Class popoverClass = NSClassFromString(@"NSPopover");
     if (popoverClass != nil)
     {
-        return [[SDPStatusBarNotificationViewController alloc] initWithMessage:message description:description];
+        return [[SDPStatusBarNotificationViewController alloc] initWithMessage:message description:descriptionMessage];
     }
     else
     {
